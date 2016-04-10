@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>音乐播放器</title>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
+	<script type="text/javascript" src='./scripts/index.js'></script>
+</head>
+<body id="picture-body">
+	<audio  src="" id="audio"></audio>
+	<div id="panel">
+		<div id="music_list">
+			<div id="title">
+				<ul id="tab_container">
+					<li id="playlist_tab">播放列表
+						
+					</li>
+					<div class="jiao play "></div>
+					<li id="diantai_tab">单曲电台列表
+						<div class="jiao radio "></div>
+					</li>
+				</ul>
+				<span id="clear_list">清空列表</span>
+				<div id="close_list"></div>
+			</div>
+			<div id="list">
+				<ul id='play_list'>
+				</ul>
+				<div class="list_scroll">
+					<div class="play_scrolling"></div>
+				</div>
+
+			</div>
+		</div>
+		<div class="myplayer" id="myplayer">
+			<div class="music_info" id='music_info'>
+				<div class="album_pic" id="album_pic"></div>
+				<div class="info_main">
+					<div class='music_name' >
+						<span id="music_name">听我想听的歌</span>
+						<a href="" class='icon_radio'></a>
+					</div>
+
+					<div class='singer_name' id="singer_name">音乐</div>
+					<div class='current_time' id="play_time"></div>
+					<div class='music_op' id="music_op">
+						<div class="btn_like" title='喜欢'></div>
+						<div class="btn_share" title="分享"></div>
+						<div class="btn_kge" id="btn_kge">
+
+							<div class="kge_code" id='key_code'>
+								<em>
+									<img src="./imgs/kge.png">
+								</em>
+								<em>手机扫描二维码，唱这首歌</em>
+								<div class="kge_logo"></div>
+								<div class="kge_arrow"></div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="bar_op">
+					<div class="btn_pre" id="btn_pre" title="上一首([])"></div>
+					<div class="btn_play" id="btn_play" title="播放(P)"></div>
+					<div class="btn_next" id="btn_next" title="下一首(])"></div>
+					<div class="cycle_now model" id="model"title="列表循环"></div>
+					<div class="volume" id="volume"title="音量调节">
+						<div class="volume_icon" id="volume_icon" title="点击设为静音(M)"></div>
+						<div class="volume_regulate"id="volume_regulate">
+							<div class="volume_bg" id="volume_bg"></div>
+							<div class="volume_bar" id="volume_bar"></div>
+							<div class="volume_op" id="volume_op"></div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="open_list" title="展开播放列表">
+				<span id="list_num"></span>
+			</div>
+			
+			<div class="cp_select" id="cp_select">
+				<div class="ordered_bt" title="顺序播放"></div>
+				<div class="unordered_bt" title="随机播放"></div>
+				<div class="single_bt" title="单曲播放"></div>
+				<div class="cycle_bt" id="cycle_bt"title="循环播放"></div>
+			</div>
+			<div class="btn_fold" title="点击收起" id="btn_fold"></div>
+			<div id="lyrics_disabled" title="显示歌词(L)">
+			</div>
+			<div class="player_bar" id="player_bar">
+				<div class="player_bg" id="player_bg"></div>
+				<!-- <div class="download_bar"> -->
+					<div class="current_bar" id="current_bar" ></div>
+					<div class="progress_op" id="progress_op"></div>
+				<!-- </div> -->
+			</div>
+			<div class="time_show" id="timeshow">
+				<p id="time_show">--:--</p>
+				<span class="icon_arrow_foot">
+					<i class="foot_border"></i>
+					<i class="foot_arrow"></i>
+				</span>
+			</div>
+		</div>
+		
+		<div id="lyrics_bg">
+<!-- 			<div class="lyrics_text">
+				<p id='line_null'>
+					<span>剩下的盛夏-TFBOYS,嘻游记</span>
+				</p>
+				<p id='line_1'>
+					<span>词：黄俊郎</span>
+				</p>
+				<p id='line_2'>
+					<span>曲：周杰伦</span>
+				</p>
+				<p id='line_3'>
+					<span>......</span>
+				</p>
+				<p id='line_4'>
+					<span>蝉鸣是窗外渐渐倒数的钟声</span>
+				</p>
+				<p id='line_5'>
+					<span>考卷的分数是往上爬的树藤</span>
+				</p>
+				<p id='line_6'>
+					<span>我画在你手掌上的蝴蝶</span>
+				</p>
+				<p id='line_7'>
+					<span>......</span>
+				</p>
+				<p id='line_8'>
+					<span>飞走了吗？</span>
+				</p>
+				<p id='line_9'>
+					<span>......</span>
+				</p>
+				<p id='line_10'>
+					<span>白云是蓝天正在放的风筝</span>
+				</p>
+			</div> -->
+			<div class="close_lyrics"></div>
+		</div>
+
+	</div>
+
+	<div id="panel2">
+		<div id="gedan">
+			<span>本地乐库</span>
+			<!-- <div id="bofang"></div> -->
+			<!-- <div id="tianjia"></div> -->
+		</div>
+
+		<div id="liebiao"></div>
+	</div>
+
+</body>
+</html>
